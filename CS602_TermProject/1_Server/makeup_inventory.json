@@ -1,0 +1,138 @@
+[
+    {
+        "_id": "1",
+        "name": "Red Lipstick",
+        "brand": "M1",
+        "category": "Lipstick",
+        "price": 12.99,
+        "quantity": 50,
+        "description": "A long-lasting red lipstick with a matte finish."
+    },
+    {
+        "_id": "2",
+        "name": "Hydrating Foundation",
+        "brand": "L2",
+        "category": "Foundation",
+        "price": 14.99,
+        "quantity": 30,
+        "description": "A lightweight, full-coverage foundation with hydration boost."
+    },
+    {
+        "_id": "3",
+        "name": "Smoky Eyeshadow Palette",
+        "brand": "U3",
+        "category": "Eyeshadow",
+        "price": 29.99,
+        "quantity": 20,
+        "description": "A 12-shade palette for creating the perfect smoky eye look."
+    },
+    {
+        "_id": "4",
+        "name": "Pink Blush",
+        "brand": "N4",
+        "category": "Blush",
+        "price": 19.99,
+        "quantity": 25,
+        "description": "A silky, pigmented pink blush for a natural glow."
+    },
+    {
+        "_id": "5",
+        "name": "Waterproof Mascara",
+        "brand": "C5",
+        "category": "Mascara",
+        "price": 9.99,
+        "quantity": 40,
+        "description": "A volumizing and lengthening mascara that resists water."
+    },
+
+    {
+        "_id": "6",
+        "name": "Nude Matte Lipstick",
+        "brand": "M1",
+        "category": "Lipstick",
+        "price": 11.49,
+        "quantity": 45,
+        "description": "A creamy matte lipstick in a flattering nude shade."
+    },
+    {
+        "_id": "7",
+        "name": "BB Cream SPF 30",
+        "brand": "L2",
+        "category": "Foundation",
+        "price": 13.99,
+        "quantity": 35,
+        "description": "A multi-tasking BB cream with sun protection and hydration."
+    },
+    {
+        "_id": "8",
+        "name": "Gold Shimmer Eyeshadow Palette",
+        "brand": "U3",
+        "category": "Eyeshadow",
+        "price": 27.99,
+        "quantity": 22,
+        "description": "A 10-shade palette featuring gold and bronze shimmer shades."
+    },
+    {
+        "_id": "9",
+        "name": "Peach Blush",
+        "brand": "N4",
+        "category": "Blush",
+        "price": 18.49,
+        "quantity": 28,
+        "description": "A soft peach blush for a sun-kissed glow."
+    },
+    {
+        "_id": "10",
+        "name": "Lengthening Mascara",
+        "brand": "C5",
+        "category": "Mascara",
+        "price": 8.99,
+        "quantity": 50,
+        "description": "A mascara designed to lengthen and separate lashes."
+    },
+    {
+        "_id": "11",
+        "name": "Liquid Eyeliner Pen",
+        "brand": "M1",
+        "category": "Eyeliner",
+        "price": 7.99,
+        "quantity": 60,
+        "description": "A precision tip liquid eyeliner for easy winged liner."
+    },
+    {
+        "_id": "12",
+        "name": "Hydrating Lip Gloss",
+        "brand": "L2",
+        "category": "Lip Gloss",
+        "price": 10.99,
+        "quantity": 40,
+        "description": "A non-sticky gloss with a high-shine finish and hydration boost."
+    },
+    {
+        "_id": "13",
+        "name": "Cream Contour Palette",
+        "brand": "U3",
+        "category": "Contour",
+        "price": 25.99,
+        "quantity": 15,
+        "description": "A cream contour palette with 6 blendable shades."
+    },
+    {
+        "_id": "14",
+        "name": "Setting Spray",
+        "brand": "N4",
+        "category": "Setting Spray",
+        "price": 12.49,
+        "quantity": 30,
+        "description": "A weightless setting spray to lock makeup in place."
+    },
+    {
+        "_id": "15",
+        "name": "Brow Pomade",
+        "brand": "C5",
+        "category": "Eyebrow",
+        "price": 9.49,
+        "quantity": 33,
+        "description": "A waterproof brow pomade for sculpted, long-lasting brows."
+    }
+]

@@ -1,0 +1,25 @@
+<h2>Product List</h2>
+<a href="/admin/products/add">Add New Product</a>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+    </tr>
+    {{#each makeup}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.category}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.quantity}}</td>
+        <td>
+            <a href="/admin/products/edit/{{this._id}}">Edit</a>
+            <form method="POST" action="/admin/products/delete/{{this._id}}">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>

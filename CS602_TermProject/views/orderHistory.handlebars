@@ -1,0 +1,18 @@
+<h2>Order History for {{user.name}}</h2>
+
+{{#if orders.length}}
+    {{#each orders}}
+        <div class="order">
+            <h3>Order ID: {{this._id}}</h3>
+            <p>Total: ${{this.total}}</p>
+            <h4>Items:</h4>
+            <ul>
+                {{#each this.items}}
+                    <li>{{this.name}} - Quantity: {{this.quantity}} - ${{this.price}} each</li>
+                {{/each}}
+            </ul>
+        </div>
+    {{/each}}
+{{else}}
+    <p>No orders found.</p>
+{{/if}}

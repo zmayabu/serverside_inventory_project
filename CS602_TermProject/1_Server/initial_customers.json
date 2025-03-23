@@ -1,0 +1,34 @@
+[
+      {
+            "_id": "1",
+            "role": "customer",
+            "name": "Alice",
+            "email": "alice@gmail.com",
+            "username": "alice",
+            "password": "1234"
+      },
+      {
+            "_id": "2",
+            "role": "customer",
+            "name": "Bob",
+            "email": "bob@yahoo.com",
+            "username": "bob",
+            "password": "2345"
+      },
+      {
+            "_id": "3",
+            "role": "customer",
+            "name": "Charlie",
+            "email": "charlie@bing.com",
+            "username": "charlie",
+            "password": "3456"
+      },
+      {
+            "_id": "4",
+            "role": "admin",
+            "name": "Zully",
+            "email": "zully@bing.com",
+            "username": "zullym",
+            "password": "7890"
+      }
+]

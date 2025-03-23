@@ -1,0 +1,23 @@
+<h2>Edit Product</h2>
+
+<form action="/admin/products/edit/{{product._id}}" method="POST">
+<b>Product ID: {{product._id}}</b>
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" name="name" value="{{product.name}}" required><br><br>
+
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" value="{{product.category}}" required><br><br>
+
+    <label for="price">Price:</label>
+    <input type="number" step="0.01" id="price" name="price" value="{{product.price}}" required><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" value="{{product.quantity}}" required><br><br>
+
+     <label for="brand">Brand:</label>
+    <input type="text" name="brand" value="{{product.brand._id}}" required />
+
+    <button type="submit">Update Product</button>
+</form>
+
+<a href="/admin/products">Back to Product List</a>

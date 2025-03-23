@@ -1,0 +1,38 @@
+<h1>Shopping Cart</h1>
+
+{{#if cart.length}}
+<table border="1">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+    </tr>
+    {{#each cart}}
+    <tr>
+        <td>{{name}}</td>
+        <td>${{price}}</td>
+        <td>
+            <form class="action-form" action="/cart/update/{{_id}}" method="POST">
+                <input type="number" name="quantity" value="{{quantity}}" min="1">
+                <button type="submit">Update</button>
+            </form>
+        </td>
+        <td>${{multiply price quantity}}</td>
+        <td>
+            <form  action="/cart/remove/{{_id}}" method="POST">
+                <button type="submit">Remove</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+
+<form class="action-form" action="/cart/checkout" method="POST">
+    <button type="submit">Checkout</button>
+</form>
+
+{{else}}
+<p>Your cart is empty.</p>
+{{/if}}

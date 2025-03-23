@@ -1,0 +1,33 @@
+<b>Makeup Id Lookup </b>
+{{this.query}}
+
+{{#if makeup.makeupIdLookup.length}}
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Stock</th>
+        <th>Action</th>
+    </tr>
+    {{#each makeup.makeupIdLookup}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{brand.name}}</td>
+        <td>{{category}}</td>
+        <td>${{price}}</td>
+        <td>{{description}}</td>
+        <td>{{quantity}}</td>
+        <td>
+            <form action="/cart/add/{{_id}}" method="POST">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+{{else}}
+<p>No products available.</p>
+{{/if}}

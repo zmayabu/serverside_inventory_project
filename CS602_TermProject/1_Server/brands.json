@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "M1",
+        "name": "Maybelline",
+        "country": "USA",
+        "products": [
+            "1", "6", "11"
+        ]
+    },
+    {
+        "_id": "L2",
+        "name": "L'Oreal",
+        "country": "France",
+        "products": [
+            "2", "7", "12"
+        ]
+    },
+    {
+        "_id": "U3",
+        "name": "Urban Decay",
+        "country": "USA",
+        "products": [
+            "3", "8", "13"
+        ]
+    },
+    {
+        "_id": "N4",
+        "name": "NARS",
+        "country": "France",
+        "products": [
+            "4", "9", "14"
+        ]
+    },
+    {
+        "_id": "C5",
+        "name": "CoverGirl",
+        "country": "USA",
+        "products": [
+            "5", "10", "15"
+        ]
+    }
+]

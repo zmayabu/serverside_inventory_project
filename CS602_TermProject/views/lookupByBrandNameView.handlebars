@@ -1,0 +1,35 @@
+<b>Brand Name Query </b>
+{{this.query}}
+
+{{#if brand}}
+{{#each brand}}
+<h4>{{name}} - ID: {{_id}}</h4>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+
+        <th>Stock</th>
+        <th>Action</th>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{category}}</td>
+        <td>{{price}}</td>
+        <td>{{description}}</td>
+        <td>{{quantity}}</td>
+        <td>
+            <form action="/cart/add/{{_id}}" method="POST">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+{{/each}}
+{{else}}
+<p>No products available for this brand query.</p>
+{{/if}}

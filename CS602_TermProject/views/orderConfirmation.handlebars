@@ -1,0 +1,16 @@
+<h2>Order Confirmation</h2>
+<p>Thank you, {{user.name}}! Your order has been successfully placed.</p>
+
+<h3>Order Details</h3>
+<p><strong>Order ID:</strong> {{order._id}}</p>
+<p><strong>Total:</strong> ${{order.total}}</p>
+<p><strong>Date:</strong> {{order.date}}</p>
+
+<h4>Items</h4>
+<ul>
+    {{#each order.items}}
+        <li>{{this.name}} - Quantity: {{this.quantity}} - ${{this.price}} each</li>
+    {{/each}}
+</ul>
+
+<a href="/">Return to Shop</a>

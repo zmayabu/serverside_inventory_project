@@ -1,0 +1,6 @@
+<h3>Customers</h3>
+<ul>
+    {{#each customers}}
+        <li><a href="/admin/customer/{{this._id}}">{{this.name}} - {{this.email}}</a></li>
+    {{/each}}
+</ul>

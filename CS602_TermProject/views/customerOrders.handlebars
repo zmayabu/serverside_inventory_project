@@ -1,0 +1,20 @@
+<h2>Orders for Customer {{customerId}}</h2>
+
+{{#each orders}}
+    <div class="order">
+        <p><strong>Order ID:</strong> {{this._id}}</p>
+        <p><strong>Total:</strong> ${{this.total}}</p>
+        <p><strong>Items:</strong></p>
+        <ul>
+            {{#each this.items}}
+                <li>{{this.name}} - {{this.quantity}} x ${{this.price}}</li>
+            {{/each}}
+        </ul>
+       
+        <form method="POST" class="action-form" action="/admin/orders/delete/{{this._id}}">
+            <button type="submit">Delete Order</button>
+        </form>
+        
+          <a href="/admin/orders/edit/{{this._id}}" class="button">✏️ Edit</a>
+    </div>
+{{/each}}
